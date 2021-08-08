@@ -6,7 +6,7 @@ link = input(Fore.RED + Back.WHITE + "Paste the link here: ")
 yt = YouTube(link)
 
 try:
-    ys = yt.streams.get_lowest_resolution()
+    ys = yt.streams.get_highest_resolution()
 except:
     print(Fore.RED + "Connection Error")
 
